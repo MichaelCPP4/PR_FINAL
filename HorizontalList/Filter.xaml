@@ -1,0 +1,23 @@
+﻿<Window x:Class="HorizontalList.Filter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HorizontalList"
+        mc:Ignorable="d"
+        Title="Filter" Height="450" Width="800">
+    <Grid HorizontalAlignment="Center" Width="800" Height="434" VerticalAlignment="Top">
+        <Label Height="34" VerticalAlignment="Top" Width="180" Margin="182,139,0,0" HorizontalAlignment="Left">Выберите параметр фильтра</Label>
+        <ComboBox x:Name="comboParam" Margin="130,0,0,0"
+                  SelectionChanged="Combo_SelectionChanged" Width="130" Height="18" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <ComboBoxItem Content="Группа продукта"/>
+            <ComboBoxItem Content="Производитель"/>
+        </ComboBox>
+        <ComboBox x:Name="comboFilter" Width="100" Height="20" IsEnabled="False"
+                  SelectionChanged="Filt_SelectionChanged" Margin="275,207,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button x:Name="Search_btn" Content="Фильтр" Click="BtFilter_Click" IsEnabled="False" Height="20" Width="105" Margin="220,249,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+        </Button>
+        <Label HorizontalAlignment="Left" Height="29" Width="100" Margin="275,173,0,0" Content="Производитель" VerticalAlignment="Top"/>
+        <Label HorizontalAlignment="Left" Height="29" Width="130" Margin="130,174,0,0" Content="Группа продуктов" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

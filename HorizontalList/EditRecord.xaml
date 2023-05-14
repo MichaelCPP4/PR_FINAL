@@ -1,0 +1,36 @@
+﻿<Window x:Class="HorizontalList.EditRecord"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HorizontalList"
+        mc:Ignorable="d"
+        Title="EditRecord" Height="562" Width="234" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Margin="0,0,0,10">
+            <Label Content="ID товара"/>
+            <TextBox x:Name="IDProduct" Margin="10" />
+
+            <Label Content="Название товара"/>
+            <TextBox x:Name="Titlee" Margin="10" />
+
+            <Label Content="Группа товара"/>
+            <TextBox x:Name="ProductGroup" Margin="10"/>
+
+            <Label Content="Фирма-производитель"/>
+            <TextBox x:Name="Manufacturer" Margin="10"/>
+
+            <Label Content="Выберите картинку"/>
+            <ComboBox x:Name="comboImage" Margin="10"/>
+
+            <Label Content="Выберите склад"/>
+            <ComboBox x:Name="comboSklad" Margin="10"/>
+
+            <Label Content="Кол-во товара"/>
+            <TextBox x:Name="Quantity" Margin="10"/>
+
+            <Button x:Name="AddRecord_btn" Content="Изменить запись" Width="120" Click="BtEdit_Click" Margin="0, 20"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

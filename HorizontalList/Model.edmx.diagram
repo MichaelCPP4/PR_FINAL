@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4c5528010be143e2802a47f35548274b" Name="Diagram1" ZoomLevel="118">
+        <EntityTypeShape EntityType="SkladModel.AvailabilityProduct" Width="1.5" PointX="5.25" PointY="1.125" />
+        <EntityTypeShape EntityType="SkladModel.Image" Width="1.5" PointX="0.75" PointY="1.25" />
+        <EntityTypeShape EntityType="SkladModel.Product" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="SkladModel.Role" Width="1.5" PointX="5.75" PointY="5.25" />
+        <EntityTypeShape EntityType="SkladModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SkladModel.User" Width="1.5" PointX="8" PointY="4.875" />
+        <EntityTypeShape EntityType="SkladModel.Warehouse" Width="1.5" PointX="3" PointY="5.125" />
+        <AssociationConnector Association="SkladModel.FK_AvailabilityProduct_Products1" />
+        <AssociationConnector Association="SkladModel.FK_AvailabilityProduct_Warehouses1" />
+        <AssociationConnector Association="SkladModel.FK_Products_Image" />
+        <AssociationConnector Association="SkladModel.FK_User_Role" />
+        <EntityTypeShape EntityType="SkladModel.TableView" Width="1.5" PointX="9.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
